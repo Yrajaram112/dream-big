@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+
 import { Mentor } from "@/types/mentor";
 import Image from "next/image";
 const starIcon = (
