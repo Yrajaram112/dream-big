@@ -17,14 +17,14 @@ const Footer = () => {
                   <Image
                     src="/images/logo/logoc.jpg"
                     alt="logo"
-                    className="w-full dark:hidden"
+                    className="h-30 w-30 rounded-full object-cover dark:hidden"
                     width={140}
                     height={30}
                   />
                   <Image
                     src="/images/logo/logoc.jpg"
                     alt="logo"
-                    className="hidden w-full dark:block"
+                    className="hidden h-30 w-30 rounded-full object-cover dark:block"
                     width={140}
                     height={30}
                   />
