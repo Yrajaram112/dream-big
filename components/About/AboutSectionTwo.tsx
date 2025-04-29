@@ -25,32 +25,38 @@ const AboutSectionTwo = () => {
             </div>
           </div>
           <div className="w-full px-4 lg:w-1/2">
+            <h2 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">What Makes Us Different?</h2>
             <div className="wow fadeInUp max-w-[470px]" data-wow-delay=".2s">
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Bug free code
+                  Personalized Mentorship
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Every student is unique. Our team provides continuous guidance, career mentorship, and emotional support even after you land your admission.
                 </p>
               </div>
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Premier support
+                  Skill Development
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
+                  We are not just preparing students to go abroad — we are investing in future leaders who will bring innovation, skills, and experience back to Nepal, building a strong, digital-ready nation.
                 </p>
               </div>
               <div className="mb-1">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Next.js
+                  Global & Local Impact
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt
-                  consectetur adipiscing elit setim.
+                  We are not just preparing students to go abroad — we are investing in future leaders who will bring innovation, skills, and experience back to Nepal, building a strong, digital-ready nation.
+                </p>
+              </div>
+              <div className="mb-1">
+                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                  Community-Driven
+                </h3>
+                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
+                  Dream Big fosters a community where alumni, mentors, and students connect, collaborate, and grow together.
                 </p>
               </div>
             </div>

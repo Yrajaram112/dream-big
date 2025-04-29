@@ -5,31 +5,49 @@ import SingleTestimonial from "./SingleTestimonial";
 const testimonialData: Testimonial[] = [
   {
     id: 1,
-    name: "Musharof Chy",
-    designation: "Founder @TailGrids",
+    name: "Mandeep Sah",
+    designation: "B.Tech CSE @ KIIT",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+      "Dream Big gave me the platform and confidence to chase my ambitions. The support and mentorship I received truly changed my journey.",
     image: "/images/testimonials/auth-01.png",
     star: 5,
   },
   {
     id: 2,
-    name: "Devid Weilium",
-    designation: "Founder @UIdeck",
+    name: "Aayush Mandal",
+    designation: "B.Tech CSE @ VIT",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+      "The community here is unmatched. With the right guidance and a positive environment, I learned to believe in my potential and dream bigger.",
     image: "/images/testimonials/auth-02.png",
     star: 5,
   },
   {
     id: 3,
-    name: "Lethium Frenci",
-    designation: "Founder @Lineicons",
+    name: "Jeevan Bhagat",
+    designation: "B.Tech CSE @ VIT",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+      "At Dream Big, I found more than education — I found inspiration. Every step forward felt supported and celebrated.",
     image: "/images/testimonials/auth-03.png",
     star: 5,
   },
+  // {
+  //   id: 4,
+  //   name: "Bishal Sah",
+  //   designation: "B.Tech CSE @ KIIT",
+  //   content:
+  //     "Dream Big transformed the way I look at challenges. I realized that with the right mindset and guidance, no dream is too far.",
+  //   image: "/images/testimonials/auth-01.png",
+  //   star: 5,
+  // },
+  // {
+  //   id: 5,
+  //   name: "Rizwan Ansari",
+  //   designation: "B.Tech CSE @ NMIT",
+  //   content:
+  //     "I never imagined how much I could grow until I became part of Dream Big. It taught me to aim higher and never settle.",
+  //   image: "/images/testimonials/auth-02.png",
+  //   star: 5,
+  // },
 ];
 
 const Testimonials = () => {
@@ -37,8 +55,8 @@ const Testimonials = () => {
     <section className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="What Our Users Says"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="What Our Students Says"
+          paragraph="Dream Big helped me get the wings to fly today.Never doubt yourself, and don't hesitate to ask for help."
           center
         />
 
