@@ -71,7 +71,7 @@ const Mentors = () => {
       <div className="container">
         <SectionTitle
           title="Dreaming Big is Free. Acting on it? Priceless."
-          paragraph="Not just guides — we’re your co-pilots, your hype team, your reality check, and your compass to success."
+          paragraph="Not just guides — we're your co-pilots, your hype team, your reality check, and your compass to success."
           center
         />
 
