@@ -18,60 +18,59 @@ const AboutSectionOne = () => {
   );
 
   return (
-    <section id="about" className="pt-16 md:pt-20 lg:pt-28">
-      <div className="container">
-        <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
-          <div className="-mx-4 flex flex-wrap items-center">
-            <div className="w-full px-4 lg:w-1/2">
-              <SectionTitle
-                title="Crafted for Startup, SaaS and Business Sites."
-                paragraph="The main 'thrust' is to focus on educating attendees on how to best protect highly vulnerable business applications with interactive panel discussions and roundtables."
-                mb="44px"
-              />
+    <section id="about" className="pt-16 md:pt-20 lg:pt-28 bg-white dark:bg-gray-900">
+  <div className="container mx-auto px-4">
+    {/* Mission */}
+    <div className="max-w-[80%] mx-auto flex flex-wrap items-center mb-16">
+      <div className="w-full md:w-1/2 mb-6 md:mb-0">
+        <h3 className="text-3xl font-bold text-blue-700 dark:text-white">Our Mission</h3>
+      </div>
+      <div className="w-full md:w-1/2">
+        <p className="text-lg text-gray-700 dark:text-gray-300">
+          To empower students to dream bigger, achieve higher, and contribute meaningfully
+          to Nepal's journey toward digital transformation.
+        </p>
+      </div>
+    </div>
 
-              <div
-                className="wow fadeInUp mb-12 max-w-[570px] lg:mb-0"
-                data-wow-delay=".15s"
-              >
-                <div className="mx-[-12px] flex flex-wrap">
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Premium quality" />
-                    <List text="Tailwind CSS" />
-                    <List text="Use for lifetime" />
-                  </div>
+    {/* Vision */}
+    <div className="max-w-[80%] mx-auto flex flex-wrap items-center mb-16">
+      <div className="w-full md:w-1/2 mb-6 md:mb-0 ">
+        <h3 className="text-3xl font-bold text-green-700 dark:text-white">Our Vision</h3>
+      </div>
+      <div className="w-full md:w-1/2">
+        <p className="text-lg text-gray-700 dark:text-gray-300">
+          To be the catalyst that transforms aspirations into achievements, and builds a network
+          of global citizens with a heart for Nepal.
+        </p>
+      </div>
+    </div>
 
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Next.js" />
-                    <List text="Rich documentation" />
-                    <List text="Developer friendly" />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="w-full px-4 lg:w-1/2">
-              <div
-                className="wow fadeInUp relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0"
-                data-wow-delay=".2s"
-              >
-                <Image
-                  src="/images/about/about-image.svg"
-                  alt="about-image"
-                  fill
-                  className="drop-shadow-three mx-auto max-w-full dark:hidden dark:drop-shadow-none lg:mr-0"
-                />
-                <Image
-                  src="/images/about/about-image-dark.svg"
-                  alt="about-image"
-                  fill
-                  className="drop-shadow-three mx-auto hidden max-w-full dark:block dark:drop-shadow-none lg:mr-0"
-                />
-              </div>
-            </div>
-          </div>
+    {/* Core Values */}
+    <div className="text-center mb-12">
+      <h3 className="text-4xl font-bold text-purple-700 dark:text-white mb-6">Our Core Values</h3>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="bg-purple-100 dark:bg-purple-800 p-6 rounded-xl shadow-md">
+          <h4 className="text-xl font-semibold mb-2 text-purple-900 dark:text-white">Integrity</h4>
+          <p className="text-gray-700 dark:text-gray-200">Honesty and transparency in everything we do.</p>
+        </div>
+        <div className="bg-purple-100 dark:bg-purple-800 p-6 rounded-xl shadow-md">
+          <h4 className="text-xl font-semibold mb-2 text-purple-900 dark:text-white">Excellence</h4>
+          <p className="text-gray-700 dark:text-gray-200">Striving for the highest standards for our students and ourselves.</p>
+        </div>
+        <div className="bg-purple-100 dark:bg-purple-800 p-6 rounded-xl shadow-md">
+          <h4 className="text-xl font-semibold mb-2 text-purple-900 dark:text-white">Empowerment</h4>
+          <p className="text-gray-700 dark:text-gray-200">Equipping students with tools, skills, and confidence to succeed.</p>
+        </div>
+        <div className="bg-purple-100 dark:bg-purple-800 p-6 rounded-xl shadow-md">
+          <h4 className="text-xl font-semibold mb-2 text-purple-900 dark:text-white">Community</h4>
+          <p className="text-gray-700 dark:text-gray-200">Building networks that support growth, collaboration, and giving back.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
   );
 };
 

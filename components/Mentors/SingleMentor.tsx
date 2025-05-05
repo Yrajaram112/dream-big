@@ -14,15 +14,15 @@ const SingleMentor = ({ mentor }: { mentor: Mentor }) => {
   return (
     <div className="w-full">
       <div
-        className="wow fadeInUp rounded-2xl shadow-md dark:shadow-gray-dark bg-white dark:bg-dark p-6 lg:px-5 xl:px-8 duration-300 hover:shadow-lg"
+        className="wow fadeInUp h-[500px] rounded-3xl shadow-md dark:shadow-gray-dark bg-white dark:bg-dark p-6 lg:px-5 xl:px-8 duration-300 hover:shadow-xl border border-gray-100 dark:border-gray-700"
         data-wow-delay=".1s"
       >
         {/* Image at Top */}
         <div className="flex flex-col items-center text-center mb-6">
-          <div className="relative h-[100px] w-[100px] overflow-hidden rounded-full mb-4">
+          <div className="relative h-[120px] w-[120px] overflow-hidden rounded-full ring-2 ring-primary mb-4 shadow-lg">
             <Image src={image} alt={name} fill className="object-cover" />
           </div>
-          <h3 className="text-xl font-bold text-dark dark:text-white">{name}</h3>
+          <h3 className="text-2xl font-bold text-dark dark:text-white">{name}</h3>
           <p className="text-sm text-body-color">{designation}</p>
           <p className="text-xs mt-1 text-gray-500 italic">{graduateFrom}</p>
         </div>
@@ -32,13 +32,15 @@ const SingleMentor = ({ mentor }: { mentor: Mentor }) => {
 
         {/* Content Section */}
         <div className="text-center">
-          <p className="text-base font-medium text-primary mb-2">"{motto}"</p>
-          <p className="text-sm text-body-color mb-4">Speciality: {title}</p>
+          <p className="text-base font-semibold text-primary mb-2 italic">"{motto}"</p>
+          <p className="text-sm text-body-color mb-4 font-medium">Speciality: <span className="text-dark dark:text-white">{title}</span></p>
 
           {/* Achievements */}
-          <ul className="text-sm text-left list-disc list-inside text-gray-600 dark:text-gray-400 space-y-1">
+          <ul className="text-sm text-left list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
             {achievements.map((achievement, index) => (
-              <li key={index}>{achievement}</li>
+              <div key={index} className="pl-2 relative before:absolute before:left-0 before:top-1.5 before:h-1.5 before:w-1.5 before:bg-primary before:rounded-full">
+                {achievement}
+              </div>
             ))}
           </ul>
         </div>

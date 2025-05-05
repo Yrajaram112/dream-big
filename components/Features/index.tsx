@@ -8,8 +8,8 @@ const Features = () => {
       <section id="features" className="py-16 md:py-20 lg:py-28">
         <div className="container">
           <SectionTitle
-            title="Main Features"
-            paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+            title="Key Highlights"
+            paragraph="Explore the core functionalities and strengths that define my technical expertise—from scalable backend systems to dynamic UI components and automated deployment pipelines."
             center
           />
 
@@ -20,6 +20,7 @@ const Features = () => {
           </div>
         </div>
       </section>
+
     </>
   );
 };
