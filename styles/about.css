@@ -1,0 +1,86 @@
+@keyframes slideInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-90px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(90px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .slide-in-left {
+    animation: slideInLeft 1s ease-out both;
+    animation-timeline: view(70% 5%);
+  }
+  
+  .slide-in-right {
+    animation: slideInRight 1s ease-out both;
+    animation-timeline: view(70% 5%);
+  }
+  
+  
+
+
+  @keyframes zoomRotateIn {
+    from {
+      opacity: 0;
+      transform: scale(0.5) rotate(-10deg);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1) rotate(0deg);
+    }
+  }
+  
+  .autoZoomRotate {
+    animation: zoomRotateIn 0.7s ease-out both;
+    animation-timeline: view(75% 10%);
+  }
+
+  @keyframes slideSkewIn {
+    from {
+      opacity: 0;
+      transform: translateY(50px) skewY(6deg);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) skewY(0deg);
+    }
+  }
+  
+  .autoSlideSkew {
+    animation: slideSkewIn 0.7s ease-out both;
+    animation-timeline: view(70% 10%);
+  }
+
+  @keyframes popBounce {
+    0% {
+      opacity: 0;
+      transform: scale(0.7);
+    }
+    80% {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .autoPopBounce {
+    animation: popBounce 0.8s ease-out both;
+    animation-timeline: view(80% 10%);
+  }
+  

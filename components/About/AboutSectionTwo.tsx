@@ -1,4 +1,5 @@
 import Image from "next/image";
+import "@/styles/about.css";
 
 const AboutSectionTwo = () => {
   return (
@@ -9,7 +10,7 @@ const AboutSectionTwo = () => {
         </h2>
 
         {/* 1. Personalized Mentorship (Image Left) */}
-        <div className="mb-16 flex flex-wrap items-center">
+        <div className="mb-16 flex flex-wrap items-center slide-in-left">
           <div className="w-full px-4 md:w-1/2 mb-6 md:mb-0">
             <Image
               src="/images/about/personalized.png"
@@ -30,7 +31,7 @@ const AboutSectionTwo = () => {
         </div>
 
         {/* 2. Skill Development (Image Right) */}
-        <div className="mb-16 flex flex-wrap items-center flex-col-reverse md:flex-row">
+        <div className="mb-16 flex flex-wrap items-center flex-col-reverse md:flex-row slide-in-right">
           <div className="w-full px-4 md:w-1/2">
             <h3 className="mb-4 text-2xl font-semibold text-blue-700 dark:text-white">
               Skill Development
@@ -51,7 +52,7 @@ const AboutSectionTwo = () => {
         </div>
 
         {/* 3. Global & Local Impact (Image Left) */}
-        <div className="mb-16 flex flex-wrap items-center">
+        <div className="mb-16 flex flex-wrap items-center slide-in-left">
           <div className="w-full px-4 md:w-1/2 mb-6 md:mb-0">
             <Image
               src="/images/about/global.png"
@@ -72,7 +73,7 @@ const AboutSectionTwo = () => {
         </div>
 
         {/* 4. Community-Driven (Image Right) */}
-        <div className="flex flex-wrap items-center flex-col-reverse md:flex-row">
+        <div className="flex flex-wrap items-center flex-col-reverse md:flex-row slide-in-right">
           <div className="w-full px-4 md:w-1/2">
             <h3 className="mb-4 text-2xl font-semibold text-blue-700 dark:text-white">
               Community-Driven

@@ -1,5 +1,4 @@
-import Image from "next/image";
-import SectionTitle from "../Common/SectionTitle";
+import "@/styles/features.css";
 
 const checkIcon = (
   <svg width="16" height="13" viewBox="0 0 16 13" className="fill-current">
@@ -50,19 +49,19 @@ const AboutSectionOne = () => {
     <div className="text-center mb-12">
       <h3 className="text-4xl font-bold text-purple-700 dark:text-white mb-6">Our Core Values</h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-4xl mx-auto">
-        <div className="bg-purple-100 dark:bg-purple-800 p-6 rounded-xl shadow-md">
+        <div className="bg-purple-100 dark:bg-purple-800 p-6 rounded-xl shadow-md autoZoomRotate">
           <h4 className="text-xl font-semibold mb-2 text-purple-900 dark:text-white">Integrity</h4>
           <p className="text-gray-700 dark:text-gray-200">Honesty and transparency in everything we do.</p>
         </div>
-        <div className="bg-purple-100 dark:bg-purple-800 p-6 rounded-xl shadow-md">
+        <div className="bg-purple-100 dark:bg-purple-800 p-6 rounded-xl shadow-md autoZoomRotate">
           <h4 className="text-xl font-semibold mb-2 text-purple-900 dark:text-white">Excellence</h4>
           <p className="text-gray-700 dark:text-gray-200">Striving for the highest standards for our students and ourselves.</p>
         </div>
-        <div className="bg-purple-100 dark:bg-purple-800 p-6 rounded-xl shadow-md">
+        <div className="bg-purple-100 dark:bg-purple-800 p-6 rounded-xl shadow-md autoZoomRotate">
           <h4 className="text-xl font-semibold mb-2 text-purple-900 dark:text-white">Empowerment</h4>
           <p className="text-gray-700 dark:text-gray-200">Equipping students with tools, skills, and confidence to succeed.</p>
         </div>
-        <div className="bg-purple-100 dark:bg-purple-800 p-6 rounded-xl shadow-md">
+        <div className="bg-purple-100 dark:bg-purple-800 p-6 rounded-xl shadow-md autoZoomRotate">
           <h4 className="text-xl font-semibold mb-2 text-purple-900 dark:text-white">Community</h4>
           <p className="text-gray-700 dark:text-gray-200">Building networks that support growth, collaboration, and giving back.</p>
         </div>

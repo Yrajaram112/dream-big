@@ -17,7 +17,6 @@ const Contact = () => {
   const [status, setStatus] = useState("");
 
   const [isOpen, setIsOpen] = useState(false);
-  const [isClose, setIsClose] = useState(true);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -32,11 +31,9 @@ const Contact = () => {
       const data = await response.json();
       if (response.ok) {
         setIsOpen(true);
-        setIsClose(false);
         setStatus("Message Sent Successfully!");
         setTimeout(() => {
           setIsOpen(false);
-          setIsClose(true);
           setFormData(initialFormData);
         }, 3000);
       }
@@ -175,8 +172,7 @@ const Contact = () => {
                     "Submit"
                   )}
                     </button>
-                    <EmailSendModal  isOpen={isOpen} onClose={isClose} status={status}/>
-                    {status && <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">{status}</p>}
+                    <EmailSendModal isOpen={isOpen} onClose={() => setIsOpen(false)} status={status} />
                   </div>
                 </div>
               </form>
