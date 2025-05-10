@@ -1,0 +1,19 @@
+.video-container {
+    transform-origin: center center;
+    transition: border-radius 0.3s ease;
+    border-radius: 12px;
+  }
+  
+.autoTakeFull {
+    animation: autoTakeFullAnimation 1.2s ease-in-out both;
+  }
+  
+  @keyframes autoTakeFullAnimation {
+    to {
+      width: 100% !important;
+      height: 100vh;
+      border-radius: 0;
+      margin-bottom: 100px;
+    }
+  }
+  
