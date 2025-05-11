@@ -24,7 +24,7 @@ const SingleMentor = ({ mentor }: { mentor: Mentor }) => {
           </div>
           <h3 className="text-2xl font-bold text-dark dark:text-white">{name}</h3>
           <p className="text-sm text-body-color">{designation}</p>
-          <p className="text-xs mt-1 text-gray-500 italic">{graduateFrom}</p>
+          {/* <p className="text-xs mt-1 text-gray-500 italic">{graduateFrom}</p> */}
         </div>
 
         {/* Divider */}
