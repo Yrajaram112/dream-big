@@ -9,7 +9,7 @@ const blogData: Blog[] = [
     image: "/images/blog/blog-01.jpg",
     author: {
       name: "Rajaram Yadav",
-      image: "/images/blog/author-01.png",
+      image: "/images/mentors/rajaram.jpg",
       designation: "Education Consultant",
     },
     tags: ["University"],
@@ -23,7 +23,7 @@ const blogData: Blog[] = [
     image: "/images/blog/blog-02.jpg",
     author: {
       name: "Rakesh Sah",
-      image: "/images/blog/author-02.png",
+      image: "/images/mentors/rakesh.jpg",
       designation: "Student Success Coach",
     },
     tags: ["Abroad"],
@@ -37,7 +37,7 @@ const blogData: Blog[] = [
     image: "/images/blog/blog-03.jpg",
     author: {
       name: "Prakash Sah",
-      image: "/images/blog/author-03.png",
+      image: "/images/mentors/ritesh.jpg",
       designation: "International Student Advisor",
     },
     tags: ["Motivation"],

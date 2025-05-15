@@ -28,19 +28,19 @@ const menuData: Menu[] = [
   {
     id: 5,
     title: "ABOUT US",
-    path: "/about",
+    path: "/#about",
     newTab: false,
   },
-  {
-    id: 6,
-    title: "SERVICES",
-    path: "/services",
-    newTab: false,
-  },
+  // {
+  //   id: 6,
+  //   title: "SERVICES",
+  //   path: "/services",
+  //   newTab: false,
+  // },
   {
     id: 7,
     title: "CONTACT",
-    path: "/contact",
+    path: "/#contact",
     newTab: false,
   },
   // {

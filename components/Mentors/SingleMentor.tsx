@@ -14,7 +14,7 @@ const SingleMentor = ({ mentor }: { mentor: Mentor }) => {
   return (
     <div className="w-full">
       <div
-        className="wow fadeInUp h-[500px] rounded-3xl shadow-md dark:shadow-gray-dark bg-white dark:bg-dark p-6 lg:px-5 xl:px-8 duration-300 hover:shadow-xl border border-gray-100 dark:border-gray-700"
+        className="wow fadeInUp h-[630px] rounded-3xl shadow-md dark:shadow-gray-dark bg-white dark:bg-dark p-6 lg:px-5 xl:px-8 duration-300 hover:shadow-xl border border-gray-100 dark:border-gray-700"
         data-wow-delay=".1s"
       >
         {/* Image at Top */}

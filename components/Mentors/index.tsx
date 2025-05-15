@@ -96,6 +96,8 @@ const Mentors = () => {
           </div>
 
           <div className="w-full md:w-4/5 mx-auto">
+
+      {/* <div className="grid gap-4 md:grid-cols-2 auto-rows-fr rounded-2xl mt-14"> */}
   <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 rounded-2xl mt-14">
     {mentorData.map((mentor) => (
       <SingleMentor key={mentor.id} mentor={mentor} />
