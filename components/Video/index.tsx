@@ -51,8 +51,8 @@ const Video = () => {
     <section className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="We are ready to help"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="We Are Here to Guide Your Future"
+          paragraph="At Dream Big Educational Consultancy, we believe in unlocking your full potential. Whether you're planning to study abroad or seeking the right academic path, our expert guidance and personalized support are here to turn your dreams into reality."
           center
           mb="80px"
         />

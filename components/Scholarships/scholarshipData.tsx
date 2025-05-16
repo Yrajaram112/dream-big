@@ -8,7 +8,6 @@ const scholarshipData: Scholarship[] = [
             "The Study in India is a project of the Government of India under the aegis of the Ministry of Education. Foreign students applying to the SII programme get the opportunity to avail of financial assistance in the form either Study in India Scholarship or Fee Waiver.",
         image: "/images/scholarship/sii.jpg",
         tags: ["creative"],
-        publishDate: "2025",
     },
     {
         id: 2,
@@ -17,7 +16,6 @@ const scholarshipData: Scholarship[] = [
             "ICCR announce Scholarship slots globally under Atal Bihari Vajpayee General Scholarship Scheme (A1201) (formerly General Scholarship Scheme) for the academic year 2023-2024 for international students",
         image: "/images/scholarship/gss.jpg",
         tags: ["computer"],
-        publishDate: "2025",
     },
     {
         id: 3,
@@ -25,8 +23,23 @@ const scholarshipData: Scholarship[] = [
         paragraph:
             "COMPEX is a scholarship scheme provided to Nepalese students by the Government of India for pursuing undergraduate courses (Engineering, Agriculture, Nursing and Pharmacy) in Indian institutes.",
         image: "/images/scholarship/compex.jpg",
-        tags: ["design"],
-        publishDate: "2025",
+        tags: ["General"],
+    },
+    {
+        id: 4,
+        title: "Direct Admission of Students Abroad (DASA) Scheme",
+        paragraph:
+            "Under this scheme, deserving foreign nationals and Non-Resident Indians (NRIs) are given direct admission to undergraduate Programmes offered by the NIT and other centrally funded institutes (other than IITs) and Punjab Engineering College, Chandigarh",
+        image: "/images/scholarship/dasa.png",
+        tags: ["General"],
+    },
+    {
+        id: 5,
+        title: "SFS Scheme for Foreign Students",
+        paragraph:
+            "The Self-Financing International Students’ Scheme provides facilities to those students who would like to fully finance their studies, stay and meet all other expenses by themselves.",
+        image: "/images/scholarship/dasa.png",
+        tags: ["General"],
     },
 ];
 export default scholarshipData;
