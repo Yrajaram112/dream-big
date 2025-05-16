@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const SingleScholarship = ({ scholarship }: { scholarship: Scholarship }) => {
-  const { title, image, paragraph, tags, publishDate } = scholarship;
+  const { title, image, paragraph, tags } = scholarship;
   return (
     <>
       <div
