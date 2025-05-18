@@ -18,7 +18,7 @@ const EmailSendModal = ({ isOpen, onClose, status }) => {
           }
           return prevWidth + 1;
         });
-      }, 30);
+      }, 23);
     };
 
     if (isOpen) {

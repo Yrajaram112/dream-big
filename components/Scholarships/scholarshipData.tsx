@@ -38,7 +38,7 @@ const scholarshipData: Scholarship[] = [
         title: "SFS Scheme for Foreign Students",
         paragraph:
             "The Self-Financing International Students’ Scheme provides facilities to those students who would like to fully finance their studies, stay and meet all other expenses by themselves.",
-        image: "/images/scholarship/dasa.png",
+        image: "/images/scholarship/sfs.png",
         tags: ["General"],
     },
 ];
