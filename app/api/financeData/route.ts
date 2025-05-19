@@ -1,8 +1,11 @@
 import { client } from '@/lib/sanity';
 import { NextResponse } from 'next/server';
 
+export const dynamic = 'force-dynamic';
+
 export async function GET() {
   try {
+
     const deposits = await client.fetch(`*[_type == "deposit"]{name, amount, date, remarks}`);
     const spending = await client.fetch(`*[_type == "spend"]{name, amount, date, reason, place}`);
 

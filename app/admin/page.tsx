@@ -41,6 +41,17 @@ const AdminDashboard = () => {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>{error}</p>;
 
+
+  const groupedDeposits = Object.values(
+  data.deposits.reduce((acc, curr) => {
+    if (!acc[curr.name]) {
+      acc[curr.name] = { name: curr.name, amount: 0 };
+    }
+    acc[curr.name].amount += curr.amount;
+    return acc;
+  }, {} as Record<string, { name: string; amount: number }>)
+);
+
   return (
     <section id="deposit" className="overflow-hidden py-16 md:py-20 lg:py-28">
       <div className="container mx-auto">
@@ -60,10 +71,10 @@ const AdminDashboard = () => {
                 </a>
               </div>
               <h3 className="text-lg font-semibold">Deposit Chart</h3>
-              {data.deposits.length > 0 ? (
+              {groupedDeposits.length > 0 ? (
                 <PieChart width={400} height={300}>
                   <Pie
-                    data={data.deposits}
+                    data={groupedDeposits}
                     dataKey="amount"
                     nameKey="name"
                     cx="50%"
@@ -72,7 +83,7 @@ const AdminDashboard = () => {
                     fill="#8884d8"
                     label
                   >
-                    {data.deposits.map((entry, index) => (
+                    {groupedDeposits.map((entry, index) => (
                       <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                     ))}
                   </Pie>
