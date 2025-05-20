@@ -1,3 +1,4 @@
+import Universities from "@/components/About/Universities";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -11,28 +12,29 @@ const UniversityPage = () => {
   return (
     <>
       <Breadcrumb
-        pageName="Partner Universities"
-        description="Explore our growing list of partner universities. Stay tuned — more details are on the way!"
+        pageName="Universities"
+        description="Explore the growing list of universities. Stay tuned — more details are on the way!"
       />
 
       <section className="relative overflow-hidden bg-white dark:bg-dark">
         {/* Full-width responsive image */}
-        <div className="w-full relative aspect-[16/6]">
+        {/* <div className="w-full relative aspect-[16/6]">
           <Image
             src="/images/about/coming.jpg"
             alt="Coming Soon"
             fill
             className="object-cover"
           />
-        </div>
+        </div> */}
 
+          <Universities/>
         {/* Text content below image + wave */}
-        <div className="relative z-20 py-16 text-center py-40">
-          <h2 className="text-3xl sm:text-4xl font-bold text-black dark:text-white mb-4">
+        <div className="relative z-20 text-center py-40">
+          {/* <h2 className="text-3xl sm:text-4xl font-bold text-black dark:text-white mb-4">
             Partner Universities Coming Soon
-          </h2>
+          </h2> */}
           <p className="text-base text-body-color dark:text-gray-400 max-w-2xl mx-auto">
-            We're working hard to bring you an exciting list of partner universities from around the world. Check back soon!
+            We're working hard to collect more datas on other best universities. Keep Checking!
           </p>
         </div>
         {/* Waves in front */}
