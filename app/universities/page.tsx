@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Universities | Dream Big",
-  description: "Partner Universities Coming Soon - Dream Big Education",
+  description: "Universities in India - Dream Big Education",
 };
 
 const UniversityPage = () => {

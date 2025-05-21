@@ -13,9 +13,8 @@ import Video from "@/components/Video";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Dream Big Educational Consultancy",
-  description: "This is Home for Dreaming Big",
-  // other metadata
+  title: "Dream Big Educational Consultancy | Study Abroad Services in Nepal",
+  description: "Discover personalized study abroad counseling, scholarship assistance, and career guidance with Dream Big Educational Consultancy in Nepal.",
 };
 
 export default function Home() {
