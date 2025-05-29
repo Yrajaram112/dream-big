@@ -1,36 +1,40 @@
+/* animations.css or globals.css */
 @keyframes slideInLeft {
-    0% {
-      opacity: 0;
-      transform: translateX(-90px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateX(-90px);
   }
-  
-  @keyframes slideInRight {
-    0% {
-      opacity: 0;
-      transform: translateX(90px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
-  
-  .slide-in-left {
-    animation: slideInLeft 1s ease-out both;
-    animation-timeline: view(70% 5%);
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(90px);
   }
-  
-  .slide-in-right {
-    animation: slideInRight 1s ease-out both;
-    animation-timeline: view(70% 5%);
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
-  
-  
+}
+
+.slide-in-left,
+.slide-in-right {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.slide-in-left.animate {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+.slide-in-right.animate {
+  animation: slideInRight 1s ease-out forwards;
+}
+
 
 
   @keyframes zoomRotateIn {

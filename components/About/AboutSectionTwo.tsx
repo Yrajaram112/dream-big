@@ -1,9 +1,37 @@
+'use client'
 import Image from "next/image";
 import "@/styles/about.css";
 
+import { useEffect } from 'react';
+
+const useScrollAnimation = () => {
+  useEffect(() => {
+    const elements = document.querySelectorAll('.slide-in-left, .slide-in-right');
+
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+            observer.unobserve(entry.target); // Optional: animate once
+          }
+        });
+      },
+      {
+        threshold: 0.2,
+      }
+    );
+
+    elements.forEach(el => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
+};
+
 const AboutSectionTwo = () => {
+  useScrollAnimation();
   return (
-    <section className="py-16 md:py-20 lg:py-28">
+    <section className="py-16 md:py-20 lg:py-24">
       <div className="container max-w-[90%] mx-auto">
         <h2 className="mb-12 text-center text-3xl font-bold text-black dark:text-white">
           What Makes Us Different?
